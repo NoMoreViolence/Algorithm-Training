@@ -1,9 +1,9 @@
-// https://www.acmicpc.net/problem/4673     셀프 넘버: 4673번
+// https://www.acmicpc.net/problem/4673     셀프 넘버: 4673
 #include <stdio.h>
 // 셀프 넘버 찾는 함수
-int SN(int d);
+int SN(int D);
 // 담을 배열
-int self_number[10001];
+int self_number[10002];
 
 int main()
 {
@@ -27,8 +27,8 @@ int main()
 }
 
 // 셀프 넘버 찾는 함수
-int SN(int d)
+int SN(int D)
 {
-  d = d + d / 1000 + (d % 1000 / 100) + (d % 100 / 10) + (d % 10);
-  return d;
+  D = D + D / 1000 + (D % 1000 / 100) + (D % 100 / 10) + (D % 10);
+  return D;
 }
